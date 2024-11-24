@@ -1,0 +1,260 @@
+/* MEILLEUR SITE POUR ICON LOGO ETC : https://icones8.fr/icons/set/indeed,
+SITE POUR LIEN : http://www.sharelinkgenerator.com/ */
+
+
+/*---------FONT---------*/
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("../Polices/Montserrat.otf") format("opentype");
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("../Polices/Roboto.ttf") format("opentype");
+}
+
+
+
+/* BARRE = barre.css */
+
+/* ------- SOUS DE LA BARRE  -------*/
+
+.nom-prenom{
+    top: 150px;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    transition: color 0.5s ease-in-out;
+    user-select: none;
+    text-align: center;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.nom-prenom:hover{
+    color: rgb(121, 217, 247);
+    transition: color 0.5s ease-in-out;
+    cursor:default;
+    user-select: none;
+}
+
+
+.img-homme{
+    filter :blur(5px);
+    height: 800px;
+    width: 104%;
+    left: -50px;
+    top: -200px;
+    position: absolute;
+    object-fit: cover;
+    user-select: none;
+}
+
+.portfolio{
+    top: 200px;
+    position: relative;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    font-family: "Montserrat";
+    user-select: none;
+    animation: flouGaucheVersLaDroite 2s ease-out forwards;
+}
+
+/*--------- PRESENTATION ---------*/ 
+
+.pre {
+    top: 380px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding-top: 25px;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.presentation { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    margin-top: 405px; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Espaces entre les lignes */
+} 
+
+.photo-profil { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    user-select: none;
+} 
+
+.description { 
+    font-family: "Roboto"; 
+    font-weight: bold;
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    line-height: 1.6; /* Espace entre les lignes */
+    max-width: 650px; /* Espace du texte */
+    margin: 0 20px; /* Espace entre la photo et le texte de présentation */
+}
+
+.centre-interet{
+    display:block;
+    align-items: center;
+    margin-left: 713px;
+    width: 70px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.sous-ci{
+    display:block;
+    text-align: center;
+    bottom: 50px;
+    font-family: "Montserrat";
+    font-size: 25px;
+}
+
+.description-formation {
+    font-family: "Roboto"; 
+    font-weight: bold;
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    line-height: 1.6; /* Espace entre les lignes */
+    max-width: 1000px; /* Espace du texte */
+    margin: 0 250px; /* Espace entre la photo et le texte de présentation */
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+
+/*--------- FRISE CHRONOLOGIQUE ---------*/ 
+
+.frise {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px; /* pour ajouter de l'espace en haut */
+    margin-bottom: 50px;
+}
+
+.block {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    bottom: 0;
+}
+
+.block.gauche {
+    left: -06%;
+}
+
+.block.droite {
+    left: 50%;
+}
+
+.contenu {
+    padding: 20px 30px;
+    background-color: rgb(162, 162, 162);
+    position: relative;
+    border-radius: 30px;
+}
+
+h2 {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #000000;
+    
+}
+
+p {
+    margin: 15px 0 0;
+    padding: 0;
+    font-family: "Montserrat";
+    line-height: 1.2; /* Espace entre les lignes */
+}
+
+.exp {
+    top: 25px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* BOUTON MON CV */
+
+.cv-button {
+    padding: 15px 25px; /* Taille Boutton */
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+    background-color: #FF9F55;
+    border-radius: 5px; /* Bordure arrondi */
+    text-decoration: none;
+}
+
+.cv-button:hover {
+    background-color: #3cb3e6;
+}
+
+.logo {
+    max-height: 27px;
+}
+
+/*--------- BARRE DU BAS ---------*/
+
+.barrebas {
+    background-color: black;
+    position: relative;
+    height: 110px;
+    bottom: -10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.txtbarre {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 28px;
+    user-select: none;
+}
+
+.img {
+    max-height: 25px;
+    align-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.txtimage {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    align-items: center;
+    text-align: center;
+}

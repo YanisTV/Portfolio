@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="../Images/neymar.png"/>
+        <meta charset="UTF-8" />
+        <title>Mes projets</title>
+        <link rel="stylesheet" media="all" href="../CSS/barre.css">
+        <link rel="stylesheet" media="all" href="../CSS/Projets.css">
+        <script>
+            function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            }
+
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = "none";
+            }
+
+            // Fermer la modale si on clique en dehors du contenu
+            window.onclick = function(event) {
+                const modals = document.getElementsByClassName('modal');
+                for (let i = 0; i < modals.length; i++) {
+                    if (event.target == modals[i]) {
+                        modals[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <!---- BARRE MENU DU HAUT ---->
+
+        <div class="barre">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="anim" >ACCUEIL</a></li>
+                    <li class="sous-classe">
+                        <a href="Projets.html" class="anim" >MES PROJETS</a>
+                        <ul class="sous-classe-contenu">
+                            <li><a href="../HTML/Projets.html#Projet1">Projet 1</a></li>
+                            <li><a href="../HTML/Projets.html#Projet2">Projet 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Bts.html" class="anim" >BTS</a></li>
+                    <li><a href="Stages.html" class="anim">STAGES</a></li>
+                    <li><a href="Veille.html" class="anim">VEILLE</a></li>
+                    <li><a href="Certifs.html"class="anim">CERTIFICATIONS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!---- PRESENTATION DE LA PAGE  ---->
+
+        <img class ="img-projets" src="..//Images/projets.jpg">
+        <a class="projets">MES PROJETS</a>
+
+        <div class="navigation-projets">
+            <div class="fenetre-projet" onclick="openModal('modalProjet1')">
+                <h2>Projet 1</h2>
+                <p>Projet Ibanez (Site Marchand)</p>
+            </div>
+            <div class="fenetre-projet" onclick="openModal('modalProjet2')">
+                <h2>Projet 2</h2>
+                <p>Projet Java (Projet IHM)</p>
+            </div>
+        </div>
+        
+<!-- FENÊTRE MODALE PROJET 1 -->
+<div id="modalProjet1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProjet1')">&times;</span>
+        <h1>Projet 1 - Site Marchand Ibanez</h1>
+        <div class="presentation">
+            <img class="photo-ibanez" src="../Images/ibanez.jpg" alt="Photo de profil">
+            <p class="description">
+                <b> Les missions demandées : <i>(1ère partie du projet)</i></b><br>
+                1. Faire un site statique, par groupe de deux personnes.<br>
+                2. Rédiger le cahier des charges ainsi qu'un planning de répartition des tâches prévisionnelles que vous devrez envoyer par mail.<br>
+                3. Accompagner l’envoi de votre site internet avec :<br>
+                <i>a. L’objectif du site<br>
+                b. Le plan du site / arborescence<br>
+                c. Le planning des tâches réalisées<br>
+                d. Bilan (conclusion sur le travail réalisé, difficultés rencontrées, critique, évolutions possibles)</i><br><br>
+                <b><i>Devenir ce site vitrine en site marchand : (2ème partie du projet)</i></b><br>
+                1. Création de la base de données.<br>
+                2. Transformer toutes les pages HTML en PHP.<br>
+                3. Rendre le site dynamique :<br>
+                <i>a. Ajouter des produits dynamiquement sur la BDD.<br>
+                b. Créer un panier pour les commandes.<br>
+                c. Création d'un PDF quand la commande est passée (En cours).</i>           
+            </p>
+        </div>
+
+
+        <div class="ibanezprojet"> 
+            <div class="ibanezprojet.produit"> 
+                <video autoplay loop muted class="image-site">
+                    <source src="../images/1122.mp4" type="video/mp4">
+                </video>
+                <p class="description-image">Page d'accueil du site marchand</p> 
+            </div> 
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/pageproduits.png" class="image-site"> 
+                <p class="description-image">Catalogue des produits</p> 
+            </div> 
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/pageinscription.png" class="image-site"> 
+                <p class="description-image">Page de l'inscription</p>
+            </div>
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/pageguitare.png" class="image-site"> 
+                <p class="description-image">Page de guitare</p>
+            </div>
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/pagecontact.png" class="image-site"> 
+                <p class="description-image">Page contact</p>
+            </div>
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/pageconnexion.png" class="image-site"> 
+                <p class="description-image">Page de connexion</p>
+            </div> 
+        </div>
+
+        <a class="pre2">LANGAGES UTILISÉS :</a>
+        <center><p class="description2">
+            - HTML <img src="../Images/html.png" class="logo"><br>
+            - CSS <img src="../Images/css.png" class="logo"><br>
+            - PHP <img src="../Images/php.png" class="logo"><br>
+            - JavaScript <img src="../Images/javascript.png" class="logo"><br>
+        </p></center>
+
+        <a class="pre2">CODE HTML / CSS / PHP</a>
+        <div class="code-projet"> 
+            <div class="code-projet-produit"> 
+                <img src="../Images/code-ajout-panier.PNG" class="image-code"> 
+                <p class="description-image">CODE AJOUT AU PANIER (PHP)</p> 
+            </div> 
+
+            <div class="code-projet-produit"> 
+                <img src="../Images/code-inscription.PNG" class="image-code"> 
+                <p class="description-image">CODE INSCRIPTION (PHP)</p> 
+            </div> 
+
+            <div class="code-projet-produit"> 
+                <img src="../Images/code-viderPanier.PNG" class="image-code"> 
+                <p class="description-image">CODE VIDER PANIER (PHP)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FENÊTRE MODALE PROJET 2 -->
+<div id="modalProjet2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProjet2')">&times;</span>
+        <h1>Projet 2 - Java IHM</h1>
+        <div class="presentation-2">
+            <img class="photo-ibanez" src="../Images/logojava.png" alt="Logo Java">
+            <p class="description-2">
+                <b>Les missions demandées : <i>(Sur Eclipse)</i></b><br>
+                1. Faire un projet Java IHM en autonomie.<br>
+                2. Avec plusieurs fonctionnalités :<br>
+                <i>a. Ajouter un animal<br>
+                b. Rechercher un animal<br>
+                c. Supprimer un animal<br>
+                d. La liste de tous les animaux</i><br><br>    
+            </p>
+        </div>
+
+        <a class="pre2">PRÉSENTATION DU PROJET</a>
+        <a href="/*Lien à mettre*/" class="sous-pre2">Lien Github (Cliquez-ICI)</a>
+
+        <div class="ibanezprojet"> 
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/fenetre-principal.PNG" class="image-site"> 
+                <p class="description-image">Fenêtre principale</p> 
+            </div> 
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/fenetre-ajout.PNG" class="image-site"> 
+                <p class="description-image">Fenêtre d'ajout</p> 
+            </div> 
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/Fentre-de-recherche.PNG" class="image-site"> 
+                <p class="description-image">Fenêtre de recherche</p>
+            </div>
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/fenetre-de-suppresion.PNG" class="image-site"> 
+                <p class="description-image">Fenêtre de suppression</p>
+            </div>
+
+            <div class="ibanezprojet.produit"> 
+                <img src="../Images/fenetre-liste.PNG" class="image-site"> 
+                <p class="description-image">Fenêtre de la liste des animaux</p>
+            </div>
+        </div>
+
+        <center><a class="pre2">LANGAGES UTILISÉS :</a>
+        <p class="description2">
+            - JAVA <img src="../Images/java.jpg" class="logo"><br>
+            - IHM (JAVA) <img src="../Images/ihmlogo.png" class="logo"><br>
+        </p></center>
+
+        <a class="pre2">CODE JAVA / IHM</a>
+        <div class="code-projet"> 
+            <div class="code-projet-produit"> 
+                <img src="../Images/all-classe.PNG" class="image-code"> 
+                <p class="description-image">TOUTES LES CLASSES DU PROJET</p> 
+            </div> 
+    
+            <div class="code-projet-produit"> 
+                <img src="../Images/ajout-java.PNG" class="image-code"> 
+                <p class="description-image">MÉTHODE DANS LA CLASSE AJOUT</p> 
+            </div> 
+    
+            <div class="code-projet-produit"> 
+                <img src="../Images/second-panel-java.PNG" class="image-code"> 
+                <p class="description-image">CODE DE LA SECONDE FENÊTRE</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        
+        <center><a href="#" class="btn-versleHaut"><img href="#" src="../Images/flecheverslehaut.png" class="retour-vers-lehaut"></a></center>
+
+     <!---- BARRE DU BAS ---->
+
+     <div class="barrebas">
+        <a class="txtbarre">Copyright © 2024 Yanis AMAND</a>
+             <div class ="items">
+                 <img src="../Images/mail.png" class="img">
+                 <a href="mailto:yanisamandpro@gmail.com?" class ="txtimage"> yanisamandpro@gmail.com</a>
+                 <img src="../Images/linkedin.png" class="img">
+                 <a href="https://fr.linkedin.com/in/yanis-amand-63541b28a"class ="txtimage"> Yanis AMAND</a>
+             </div>
+     </div>  
+        
+    </body>
+</html>

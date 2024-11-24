@@ -1,0 +1,162 @@
+/*---------FONT---------*/
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("../Polices/Montserrat.otf") format("opentype");
+}
+
+/* ------- SOUS DE LA BARRE  -------*/
+
+.img-certifs{
+    filter : blur(8px);
+    height: 800px;
+    width: 105%;
+    left: -50px;
+    top: -200px;
+    position: absolute;
+    object-fit: cover;
+    user-select: none;
+}
+
+.certifs{
+    top: 150px;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    transition: color 0.5s ease-in-out;
+    user-select: none;
+    text-align: center;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.certifs:hover{
+    color: rgb(121, 217, 247);
+    transition: color 0.5s ease-in-out;
+    cursor: default;
+    user-select: none;
+}
+
+.pre2 {
+    top: 470;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+body { 
+    font-family: "Montserrat"; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f5f5f5; 
+} 
+
+/*------- CERTIFICATIONS SECTION -------*/ 
+
+.certifications{
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 40px; 
+    margin-top: 450px;
+    margin-left: 130px;
+} 
+
+.certification-fond { 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin: 25px; 
+    padding: 25px; 
+    max-width: 300px; 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+
+.certification-fond:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Ombre derriere le fond blanc */
+} 
+
+.certif-img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    user-select: none;
+} 
+
+.certif-titre { 
+    font-size: 24px; 
+    color: #333; 
+    margin: 15px 0 10px; 
+    user-select: none;
+} 
+
+.certif-desc { 
+    font-size: 15px; 
+    color: #666; 
+    margin-bottom: 20px; 
+} 
+
+.certif-lien { 
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff; 
+    background-color: #3cb3e6; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    user-select: none;
+} 
+
+.certif-lien:hover { 
+    background-color: #ff9f55; 
+    padding: 15px 25px;
+    user-select: none;
+}
+
+/*--------- BARRE DU BAS ---------*/
+
+.barrebas {
+    background-color: black;
+    position: relative;
+    height: 110px;
+    bottom: -10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.txtbarre {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 28px;
+    user-select: none;
+}
+
+.img {
+    max-height: 25px;
+    align-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.txtimage {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    align-items: center;
+    text-align: center;
+}

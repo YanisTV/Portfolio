@@ -1,0 +1,430 @@
+/*---------FONT---------*/
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("../Polices/Montserrat.otf") format("opentype");
+}
+
+/* ------- SOUS DE LA BARRE  -------*/
+.projets{
+    top: 150px;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    transition: color 0.5s ease-in-out;
+    user-select: none;
+    text-align: center;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.projets:hover{
+    color: rgb(121, 217, 247);
+    transition: color 0.5s ease-in-out;
+    cursor:default;
+    user-select: none;
+}
+
+
+.img-projets{
+    filter :blur(5px);
+    height: 800px;
+    width: 104%;
+    left: -50px;
+    top: -200px;
+    position: absolute;
+    object-fit: cover;
+    user-select: none;
+}
+
+/*--------- PRESENTATION ---------*/ 
+
+
+.pre {
+    top: 425px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding-top: 25px;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.sous-pre {
+    top: 400px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+/* BOUTON CAHIER DES CHARGES */
+
+.cahier-button {
+    padding: 12px 15px; /* Taille Boutton */
+    font-family: "Montserrat";
+    font-size: 30px;
+    color: white;
+    background-color: #FF9F55;
+    border-radius: 5px; /* Bordure arrondi */
+    text-decoration: none;
+    position: absolute;
+    margin-top: 300;
+    right: 75;
+    user-select: none;
+    animation: animBouton 2s ease-out forwards;
+}
+
+.cahier-button:hover {
+    background-color: #3cb3e6;
+    font-size: 30.2px;
+}
+
+
+.presentation {
+    display: flex; 
+    align-items: flex-start; /* Aligner les éléments en haut pour éviter de trop les espacer */
+    justify-content: center; 
+    text-align: left; 
+    margin-top: 20px; /* Réduire la marge pour rapprocher davantage le contenu */
+    flex-wrap: wrap; 
+    gap: 20px; /* Espaces entre les lignes */
+}
+
+.presentation-2 { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    margin-top: 15px; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Espaces entre les lignes */
+} 
+
+.photo-ibanez {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    user-select: none;
+    margin-right: 20px; /* Ajouter une marge à droite pour rapprocher l'image du texte */
+}
+
+.description { 
+    font-family: "Montserrat"; 
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    line-height: 1.6; /* Espace entre les lignes */
+    max-width: 650px; /* Espace du texte */
+    margin: 0 20px; /* Espace entre la photo et le texte de présentation */
+}
+
+.description-2 { 
+    font-family: "Montserrat"; 
+    font-size: 24px; 
+    color: rgb(0, 0, 0); 
+    line-height: 1.6; /* Espace entre les lignes */
+    max-width: 650px; /* Espace du texte */
+    margin: 0 20px; /* Espace entre la photo et le texte de présentation */
+}
+
+.pre2 {
+    top: 25px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sous-pre2 {
+    bottom:30px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    font-style: italic;
+}
+
+.sous-pre2:hover {
+    color: #3cb3e6;
+}
+
+
+/*--------- PAGES IBANEZ --------*/
+
+.ibanezprojet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.pre3{
+    top: 25px;
+    display: block;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: "Montserrat";
+    user-select: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.ibanezprojet.produit{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
+    user-select: none;
+} 
+
+.image-site { 
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; /* Adaptation des photos a son conteneur */
+    border-radius: 15px; /* Bordure arrondi */
+    user-select: none;
+    margin-left: 10px; /* Marge entre les images des produits */
+}
+
+.image-site:hover{ 
+    width: 500px; 
+    height: 300px; 
+    border-radius: 15px; /* Bordure arrondi */
+    user-select: none;
+} 
+
+.description-image { 
+    font-family: "Montserrat"; 
+    font-size: 16px; 
+    color: rgb(0, 0, 0); 
+    margin-top: 10px; 
+    text-align: center; 
+    user-select: none;
+}
+
+.description2 { 
+    font-family: "Montserrat"; 
+    font-size: 30px; 
+    color: rgb(0, 0, 0); 
+    line-height: 1.6; /* Espace entre les lignes */
+    max-width: 650px; /* Espace du texte */
+    margin: 0 20px; /* Espace entre la photo et le texte de présentation */
+}
+
+.logo {
+    max-height: 27px;
+    user-select: none;
+}
+
+hr{
+    left: 0;
+    border-width: 8;
+    right: 0;
+    border-top-style: solid;
+}
+
+.retour-vers-lehaut{
+    margin-top: 50px;
+    height: 40px;
+}
+.btn-VersleHaut{
+    scroll-behavior:smooth;
+}
+
+/* CODE PROJET */
+
+.code-projet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.codeprojet.produit{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
+    user-select: none;
+} 
+
+.image-code { 
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; /* Adaptation des photos a son conteneur */
+    border-radius: 15px; /* Bordure arrondi */
+    user-select: none;
+    margin-left: 10px; /* Marge entre les images des produits */
+}
+
+.image-code:hover{ 
+    width: 600px; 
+    height: 400px; 
+    border-radius: 15px; /* Bordure arrondi */
+    user-select: none;
+} 
+
+
+/*--------- BARRE DU BAS ---------*/
+
+.barrebas {
+    background-color: black;
+    position: relative;
+    height: 110px;
+    bottom: -10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.txtbarre {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 28px;
+    user-select: none;
+}
+
+.img {
+    max-height: 25px;
+    align-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.txtimage {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    align-items: center;
+    text-align: center;
+}
+
+/*--------- FENÊTRES DE NAVIGATION ---------*/
+
+.navigation-projets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 500px;
+    flex-wrap: wrap;
+}
+
+.fenetre-projet {
+    width: 300px;
+    height: 200px;
+    background-color: #3cb3e6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.fenetre-projet:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fenetre-projet h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.fenetre-projet p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Fenêtre Modale */
+.modal {
+    display: none; /* Masquer par défaut */
+    position: fixed; /* Fixer la position de la modale */
+    z-index: 999; /* Au-dessus de tout le reste */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond transparent sombre */
+    overflow: auto; /* Permettre le défilement si le contenu est grand */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto; /* Centrer la fenêtre modale */
+    padding: 30px;
+    border: none;
+    width: 90%; /* Augmente la largeur à 90% de la vue */
+    max-width: 1200px; /* Augmenter la largeur maximale de la fenêtre modale */
+    max-height: 80vh; /* Hauteur maximale de 80% de la hauteur de l'écran */
+    overflow-y: auto; /* Permettre le défilement vertical à l'intérieur de la modale */
+    border-radius: 15px; /* Bordures arrondies */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Ombre portée pour donner du relief */
+    animation: slideDown 0.4s ease; /* Animation d'apparition */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation de la fenêtre modale */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,147 @@
+/*---------FONT---------*/
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("../Polices/Montserrat.otf") format("opentype");
+}
+
+body {  
+    background-color: #f5f5f5; 
+} 
+/* ------- SOUS DE LA BARRE  -------*/
+
+.bts-sio{
+    top: 150px;
+    display: block;
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    transition: color 0.5s ease-in-out;
+    user-select: none;
+    text-align: center;
+    margin-bottom: 450;
+    color: white;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.bts-sio:hover{
+    color: rgb(121, 217, 247);
+    transition: color 0.5s ease-in-out;
+    cursor:default;
+    user-select: none;
+}
+
+
+.img-lycee{
+    filter :blur(5px);
+    height: 800px;
+    width: 105%;
+    left: -50px;
+    top: -200px;
+    position: absolute;
+    object-fit: cover;
+    user-select: none;
+}
+
+/*------- SECTION STYLES -------*/ 
+
+.bts-div, 
+.specialties-div, 
+.debouches { 
+    padding: 30px 20px; /* Espaces entre les lignes */
+    background-color: white; 
+    margin: 20px; /* Marges entre eux */
+    border-radius: 8px; /* Bordures arrondis */
+    box-shadow: 04px 04px rgb(90, 90, 90); /* Ombre derriere les div */
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.bts-div:hover, 
+.specialties-div:hover, 
+.debouches:hover { 
+    padding: 40px 20px; /* Espaces entre les lignes */
+    background-color: white; 
+    margin: 20px; /* Marges entre eux */
+    border-radius: 8px; /* Bordures arrondis */
+    box-shadow: 08px 12px rgb(90, 90, 90); /* Ombre derriere les div */
+} 
+
+.bts-h2, 
+.specialties-h2, 
+.debouches-titre { 
+    font-size: 36px; 
+    color: #333;
+    margin-bottom: 20px; 
+    text-align: center;
+    font-family: "Montserrat";
+} 
+
+.description, 
+.specialitesdesc, 
+.debouches-desc { 
+    font-size: 18px; 
+    color: #666; 
+    line-height: 1.6; /* Espaces entre les lignes */
+    margin-bottom: 20px; 
+    text-align: justify;
+    font-family: "Montserrat";
+} 
+
+.specialites { 
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+
+.specialtestitre { 
+    font-size: 24px;
+    color: #333; 
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+} 
+
+.specialitesdesc { 
+    font-size: 18px; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+
+/*--------- BARRE DU BAS ---------*/
+
+.barrebas {
+    background-color: black;
+    position: relative;
+    height: 110px;
+    bottom: -10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.txtbarre {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 28px;
+    user-select: none;
+}
+
+.img {
+    max-height: 25px;
+    align-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.txtimage {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    align-items: center;
+    text-align: center;
+}

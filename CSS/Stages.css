@@ -1,0 +1,154 @@
+/*---------FONT---------*/
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("../Polices/Montserrat.otf") format("opentype");
+}
+
+
+
+/* ------- SOUS DE LA BARRE  -------*/
+
+.stages{
+    top: 150px;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    transition: color 0.5s ease-in-out;
+    user-select: none;
+    text-align: center; 
+    margin-bottom: 440px;
+    animation: flouHautVersLeBas 2s ease-out forwards;
+}
+
+.stages:hover{
+    color: rgb(121, 217, 247);
+    transition: color 0.5s ease-in-out;
+    cursor:default;
+    user-select: none;
+}
+
+
+.img-stages{
+    filter: blur(8px);
+    display: block;
+    height: 800px;
+    width: 104%;
+    left: -50px;
+    top: -200px;
+    position: absolute;
+    object-fit: cover;
+    user-select: none;
+}
+
+body { 
+    font-family: "Montserrat"; 
+    background-color: #f5f5f5; 
+} 
+
+/*------- SECTION STYLES -------*/ 
+
+.stages-div { 
+    padding: 40px 20px;
+    margin: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: flouHautVersLeBas 2s ease-out forwards;
+} 
+
+.stages-gtitre { 
+    font-size: 36px; 
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center; 
+} 
+
+.stage-item { 
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 40px; 
+} 
+
+.stage-img { 
+    width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-right: 20px; 
+} 
+
+
+.stage-titre{ 
+    font-size: 24px; 
+    color: #333;
+     margin-bottom: 10px; 
+} 
+
+.stage-desc { 
+    font-size: 18px; 
+    color: #282828; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+} 
+
+.listes{
+    padding-left: 25px; 
+} 
+
+.listes li { 
+    font-size: 16px; 
+    color: #666; 
+    margin-bottom: 10px; 
+}
+
+.ukg-img { 
+    width: 300px; 
+    border-radius: 8px; 
+    margin-bottom:10px ;
+} 
+
+.ukg-img:hover { 
+    width: 500px; 
+    border-radius: 8px; 
+    margin-right: 20px; 
+}
+
+/*--------- BARRE DU BAS ---------*/
+
+.barrebas {
+    background-color: black;
+    position: relative;
+    height: 110px;
+    bottom: -10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.txtbarre {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    padding-top: 28px;
+    user-select: none;
+}
+
+.img {
+    max-height: 25px;
+    align-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.txtimage {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    align-items: center;
+    text-align: center;
+}
